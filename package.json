@@ -4,16 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gorinesia/practice-express.js.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "ejs": "^3.1.5",
-    "express": "^4.17.1"
+  "bugs": {
+    "url": "https://github.com/gorinesia/practice-express.js/issues"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
-  }
+  "homepage": "https://github.com/gorinesia/practice-express.js#readme"
 }
