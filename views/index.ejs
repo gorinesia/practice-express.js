@@ -1,0 +1,20 @@
+<%- include ('partials/header')%>
+
+<h1>トップページのファイルです</h1>
+
+<h2><%= data %></h2>
+
+<h2>siteInfoを出力</h2>
+<ul>
+  <li><%= siteInfo.name %></li>
+  <li><%= siteInfo.owner %></li>
+</ul>
+
+<h2>itemsを出力</h2>
+<ul>
+  <% items.forEach((item) => { %>
+    <li><%= item.name %></li>
+  <% }); %>
+</ul>
+
+<%- include ('partials/footer')%>
