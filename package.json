@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "mocha"
   },
   "repository": {
@@ -18,6 +19,11 @@
   "homepage": "https://github.com/gorinesia/practice-express.js#readme",
   "devDependencies": {
     "mocha": "^8.1.3",
-    "power-assert": "^1.6.1"
+    "nodemon": "^2.0.4",
+    "power-assert": "^1.6.1",
+    "supertest": "^5.0.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
