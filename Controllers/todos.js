@@ -16,5 +16,23 @@ module.exports = {
     } catch (error) {
       res.status(400).json({message: error.message});
     }
+  },
+
+  putTodo: (req, res) => {
+    const id = req.params.id;
+    const {title, body} = req.body;
+    const parseId = parseInt(id, 10);
+
+    try {
+      const updatedTodo = Todo.update({
+        id: parseId,
+        title,
+        body
+      });
+
+      res.status(200).json(updatedTodo);
+    } catch (error) {
+      res.status(400).json({message: error.message});
+    }
   }
 }
